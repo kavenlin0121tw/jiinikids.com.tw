@@ -1,0 +1,73 @@
+/* 整體設置*/ 
+.navigation {
+	list-style-type:none;
+	z-index: 111;
+	position: absolute;
+	}
+ 
+.navigation li {
+	float:left;
+	padding:0;
+	_margin:0 2px 0 0;
+	}
+ 
+/* 設置選單區塊*/
+.navigation li dl {
+
+	}
+ 
+.navigation li dt a , .navigation li dd a{ display:block;}
+ 
+ 
+/* 設置主選單dt */
+.navigation li dt {
+	text-align:center;
+	overflow:hidden;
+	}
+ 
+.navigation li dt a ,.navigation  li dt a:visited {
+	display:block;
+	text-decoration:none;
+	}
+ 
+/* 設置子選單dd */
+.navigation li dd {
+
+	}
+ 
+.navigation li dd.last {
+	border-bottom:0;
+	}	
+ 
+.navigation li dd a, .navigation  li dd a:visited , .navigation  li dd a:link{
+	display:block;
+	text-decoration:none;
+	text-align: center;
+    }
+	
+ 
+.navigation  li dd a:hover{
+	display:block;
+	text-decoration:none;
+	text-align: center;
+    }
+ 
+/*隱藏子選單*/
+.navigation li dd { 
+display:none;
+border-radius: 10px 10px 10px 10px;
+}
+ 
+ 
+/* 滑鼠滑入顯示子選單 */
+.navigation li:hover dd, .navigation li a:hover dd { 
+display:block;
+border-radius: 10px 10px 10px 10px;
+}
+ 
+/*ie6 hack*/
+.navigation li:hover,.navigation li a:hover { border:0;}
+.navigation table {
+	border-collapse:collapse;
+	text-align:left;
+	}

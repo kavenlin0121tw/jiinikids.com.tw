@@ -1,0 +1,129 @@
+DIV.scott {
+	TEXT-ALIGN: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin-top: 0px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 12px;
+	padding-right: 5px;
+	padding-bottom: 20px;
+	padding-left: 5px;
+}
+DIV.scott A {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 2px;
+	COLOR: #666666;
+	MARGIN-RIGHT: 2px;
+	PADDING-TOP: 2px;
+	TEXT-DECORATION: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	border: 1px none #ddd;
+}
+DIV.scott A:hover {
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #999999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	border: 1px none #4c4c4c;
+}
+DIV.scott A:active {
+	COLOR: #FF66CC;
+	BACKGROUND-COLOR: #FFFFFF;
+	border: 1px solid #4c4c4c;
+}
+DIV.scott SPAN.current {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	FONT-WEIGHT: bold;
+	PADDING-BOTTOM: 2px;
+	COLOR: #fff;
+	MARGIN-RIGHT: 2px;
+	PADDING-TOP: 2px;
+	BACKGROUND-COLOR: #FF66CC;
+	border: 1px none #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+DIV.scott SPAN.disabled {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 2px;
+	COLOR: #999999;
+	MARGIN-RIGHT: 2px;
+	PADDING-TOP: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px none #f3f3f3;
+}
+
+
+
+DIV.scott2 {
+	TEXT-ALIGN: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin-top: 0px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 12px;
+	padding-right: 5px;
+	padding-bottom: 20px;
+	padding-left: 5px;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #FAA9F8;
+}
+DIV.scott2 A {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 2px;
+	COLOR: #666666;
+	MARGIN-RIGHT: 2px;
+	PADDING-TOP: 2px;
+	TEXT-DECORATION: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	border: 1px none #ddd;
+}
+DIV.scott2 A:hover {
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #999999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	border: 1px none #4c4c4c;
+}
+DIV.scott2 A:active {
+	COLOR: #FF66CC;
+	BACKGROUND-COLOR: #FFFFFF;
+	border: 1px solid #4c4c4c;
+}
+DIV.scott2 SPAN.current {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	FONT-WEIGHT: bold;
+	PADDING-BOTTOM: 2px;
+	COLOR: #fff;
+	MARGIN-RIGHT: 2px;
+	PADDING-TOP: 2px;
+	BACKGROUND-COLOR: #FF66CC;
+	border: 1px none #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+DIV.scott2 SPAN.disabled {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 2px;
+	COLOR: #999999;
+	MARGIN-RIGHT: 2px;
+	PADDING-TOP: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px none #f3f3f3;
+}
+

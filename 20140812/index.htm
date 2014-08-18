@@ -1,0 +1,243 @@
+<!doctype html>
+<html debug="true" lang="zh_tw">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="精靈劇團│精合傳播事業有限公司" />
+<meta name="keywords" content="精靈劇團│精合傳播事業有限公司"/>
+<link href="css/jinnikids.css" rel="stylesheet" type="text/css" />
+<link href="css/menu.css" rel="stylesheet" type="text/css" />
+
+<link href="css/banner.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<title>精靈劇團│精合傳播事業有限公司</title>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="all_wap">
+<div id="header">
+<div id="content_top">
+<div id="menu-wrap">
+      <div div="snav"><div class="snav"><a href="#"><div id="doc-form"></div></a></div>
+        <div class="snav"><a href="index.htm"><div id="doc-form-c"></div></a></div>
+      </div>
+      
+      <div id="menu-content">
+      </a>
+        <ul class="navigation">
+        	<li>  
+    <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->  
+    	<dl>
+			<dt><div id="mupica"><ul><li class="onea" title="回首頁"><a href="index.htm"></a></li></ul></div></dt>
+		</dl>
+    <!--[if lte IE 6]></td></tr></table></a><![endif]-->    
+    </li> 
+	<li>  
+    <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->  
+    	<dl>
+			<dt><div id="mupic"><ul><li class="one" title="關於我們"><a href="about.htm"></a></li></ul></div></dt>
+		</dl>
+    <!--[if lte IE 6]></td></tr></table></a><![endif]-->    
+    </li> 
+    <li>
+    <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->  
+        <dl>
+			<dt><div id="mupic2"><ul><li class="two" title="最新消息"><a href="news.htm"></a></li>
+			</ul></div></dt>		
+		</dl>
+     </li>
+     <!--[if lte IE 6]></td></tr></table></a><![endif]--> 
+     <li>
+     <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->  
+        <dl>
+			<dt><div id="mupic3"><ul><li class="three" title="產品介紹"><a href="products.htm"></a></li></ul></div></dt>
+		</dl>
+    <!--[if lte IE 6]></td></tr></table></a><![endif]-->     			
+    </li>
+        <li>
+    <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->  
+        <dl>
+			<dt><div id="mupic4"><ul><li class="four" title="業務介紹"><a href="case.htm"></a></li></ul></div></dt>		
+		</dl>
+     </li>
+         <li>
+    <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->  
+        <dl>
+			<dt><div id="mupic5"><ul><li class="five" title="徵才專區"><a href="joinus.htm"></a></li></ul></div></dt>		
+		</dl>
+     </li>
+         <li>
+    <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->  
+        <dl>
+			<dt><div id="mupic6"><ul><li class="five" title="聯絡我們"><a href="contactus.htm"></a></li></ul></div></dt>		
+		</dl>
+     </li>
+         <li>
+    <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->  
+        <dl>
+			<dt><div id="mupic7"><ul><li class="five" title="行事曆"><a href="calender.htm"></a></li></ul></div></dt>		
+		</dl>
+     </li>
+</ul>
+      </div>
+    </div>
+  </div></div>
+</div>
+</div>
+<div id="header_top"><div id="banner" class="slide-1">
+	<ul id="J-slide">
+		<li class="slide">
+			<div class="bghome bg-1 J_lazyloadBanner bg-1-lazy"></div>
+	  </li>
+		<li class="slide">
+			<div class="bghome bg-2 J_lazyloadBanner bg-2-lazy"></div>
+	  </li>
+		<li class="slide">
+			<div class="bghome bg-3 J_lazyloadBanner bg-3-lazy"></div>
+	  </li>
+		<li class="slide">
+			<div class="bghome bg-4 J_lazyloadBanner bg-4-lazy"></div>
+		</li>
+<li class="slide">
+			<div class="bghome bg-5 J_lazyloadBanner bg-5-lazy"></div>
+	  </li>
+	</ul>
+
+	<div id="J-slide-number" class="slide-number">
+		<a href="javascript:void(0);" class="slide-number-active" >1</a>
+		<a href="javascript:void(0);">2</a>
+		<a href="javascript:void(0);">3</a>
+		<a href="javascript:void(0);">4</a>        </div>
+
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+   autoroll();
+	hookThumb();
+});
+var i=-1; 
+var offset = 5000; 
+var timer = null;
+function autoroll(){
+	n = $('#J-slide-number > a').length-1;
+	i++;
+	if(i > n){
+		i = 0;
+	}
+	slide(i);
+	timer = window.setTimeout(autoroll, offset);
+}
+function slide(i){
+	$('#J-slide-number > a').eq(i).addClass('slide-number-active').siblings().removeClass('slide-number-active');
+	 $("#J-slide > li").eq(i).css({opacity: '1',display: "block","z-index": "100"}).siblings().css({"z-index": "1",opacity: '1',display: "block"});
+	  $('#J-slide-number > a').each(function(p){
+		  if(p==i){
+			  $(".bg-"+(p+1)+"-lazy").stop().animate({opacity: '1'},1000);
+			  $(".pic-"+(p+1)+"-lazy").slideDown("slow");
+			  $(".txt-"+(p+1)+"-lazy").slideDown("slow");
+		  }else{
+			  $(".bg-"+(p+1)+"-lazy").stop().animate({opacity: '0'},1000);
+				$(".pic-"+(p+1)+"-lazy").slideUp("slow");
+			  $(".txt-"+(p+1)+"-lazy").slideUp("slow");
+		  }
+	  });
+	 
+	$('#banner').attr('class','slide-'+(i+1));
+}
+function hookThumb(){
+	$('#J-slide-number > a').each(function(j){
+		$(this).click(function(){
+			slide(j);
+			clearTimeout(timer);
+			i=j;
+		   timer = window.setTimeout(autoroll, offset);
+			return false;
+		});
+	});
+}
+</script></div>
+<div id="container">
+<div id="news-marquee">
+<div class="news-marquee">
+<marquee direction="left" height="40" scrollamount="3" scrolldelay="4" class="font16_o" onMouseOver="this.stop()" onMouseOut="this.start()"><a href="#" target="_blank">天哪!竟然有人利用LOCK小醬的名義四處搗蛋，讓OPEN星球發出宇宙通緝令要抓拿他!到底發生了什麼事? ...</a>
+</marquee>
+</div></div>
+<div id="main">
+<div class="main">
+<div id="left">
+<div id="doc-about" title=""></div>
+<div class="content_r"><img src="images/img.jpg" width="216" height="85"><br>
+</div>
+<div class="content_r"><span class="font15_pink">精合傳播事業有限公司</span> ( 精靈劇團 ) 以兒童節目偶戲演出以及舞台劇表演加上各式大小活動為主要經營項目，參與的節目有公視、東森、華視等兒童節目，錄影演出與舞台戲劇表演及全台各大小活動代言人表演。...... <a href="about.htm"><img src="images/more.png" width="58" height="20"></a><br>
+</div>
+<div class="content_r"><a href="calender.htm"><div id="doc-calender"></div></a>
+</div>
+</div>
+<div id="sidebar">
+
+<div class="content_l"><div id="doc-news" title=""></div>
+<div class="content_box">
+     <div id="newsbox"><div id="list_home">
+						<div class="list_home_left"><a href="news.htm">喲呼~*OPEN小將的好朋友KUMAMON來台灣囉!! </a></div>
+				  
+     </div><div class="news_con">發佈日期：2013-07-30</div>
+     </div>
+     <div id="newsbox"><div id="list_home">
+						<div class="list_home_left"><a href="news.htm">OPEN小將首部舞台劇ibon全面開賣!!</a></div>
+				  
+     </div><div class="news_con">發佈日期：2013-07-30</div>
+     </div>
+     <div id="newsbox"><div id="list_home">
+						<div class="list_home_left"><a href="news.htm">帥氣的OPEN將抵達高雄清漢門市.邀請大家來試吃義大利麵~高雄的朋友快來喔~...</a></div>
+				  
+     </div><div class="news_con">發佈日期：2013-07-30</div>
+     </div>
+     <div id="newsbox"><div id="list_home">
+						<div class="list_home_left"><a href="news.htm">咱們OPEN將和小桃見證了這對幸福地婚姻!!</a></div>
+				  
+     </div><div class="news_con">發佈日期：2013-07-30</div>
+     </div>
+     <div id="newsbox"><div id="list_home">
+						<div class="list_home_left"><a href="news.htm">喲呼~*OPEN小將的好朋友KUMAMON來台灣囉!! </a></div>
+				  
+     </div><div class="news_con">發佈日期：2013-07-30</div>
+     </div>
+     <div id="newsbox"><div id="list_home">
+						<div class="list_home_left"><a href="news.htm">OPEN小將首部舞台劇ibon全面開賣!!</a></div>
+				  
+     </div><div class="news_con">發佈日期：2013-07-30</div>
+     </div>
+     
+</div></div>
+</div>
+<div id="right">
+<div id="sidebar_right2">
+<div class="bgtope"></div>
+ <div id="contente">
+  <div class="post2">
+  <div class="menu3">
+    <ul>
+<iframe width="265" height="199" src="http://www.youtube.com/embed/KkIN-VO8_xk" frameborder="0" allowfullscreen></iframe>
+    </ul>
+  </div>
+</div>
+  </div>
+  </div>
+  <div class="bgbtme"></div>
+  <div id="sidebar_right1"><img src="images/fb.jpg" width="293" height="227"></div>
+</div>
+</div>
+</div></div>
+<div class="clear"></div>
+<div id="foot">
+
+
+<div class="foot_nav"><div div="foot_snav"><div class="snav"><a href="#"><div id="doc-form-f"></div></a></div><div class="snav"><a href="#"><div id="doc-form-e"></div></a></div>
+        <div class="snav"><a href="index.htm"><div id="doc-form-h"></div></a></div>
+      </div><span class="font15_w">精靈劇團│精合傳播事業有限公司 版權所有</span><br>
+  地　址：235新北市中和區連城路236號6樓　電　話：02-82282199　傳　真：02-82281136</div>
+<div class="foot_bar">Copyright © 2014 Jinni' S kids theater and Jinho Communication Co., Ltd.</div>
+</div>
+</body>
+</html>

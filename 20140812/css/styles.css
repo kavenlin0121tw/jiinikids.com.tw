@@ -1,0 +1,81 @@
+﻿ul.expmenu{
+	width:199px;
+	margin-right: auto;
+	margin-left: auto;
+}
+ul.expmenu li div.header{
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+}
+ul.expmenu li:last-child div.header{border-bottom:none;}
+ul.expmenu li ul li {
+	padding:12px;
+	color:#FFFFFF;
+}
+ul.expmenu li ul li:last-child{border-bottom:none;}
+ul.expmenu li ul li.selected{background-color:#fc7fb3;}
+ul.expmenu div.header{
+	color:#203f61;/* Old browsers */
+	background-image: url(../images/arrow2.png);
+	background-repeat: no-repeat;
+	background-position: 5px;
+	text-decoration: none;
+}
+ul.expmenu li div.header .label{
+	background:no-repeat;
+	color: #fff;/*text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.8);*/
+	font-weight:bold;
+	padding-left: 18px;
+	text-decoration: none;
+}
+ul.expmenu li div.header .arrow{display:block;width:16px;height:16px;background:no-repeat center;float:right;}
+ul.expmenu li div.header .arrow.up{
+	background-image:url(../images/arrow_u.png);
+	padding-top: 8px;
+}
+ul.expmenu li div.header .arrow.down{background-image:url(../images/arrow_d.png);
+	padding-top: 8px;
+}
+ul.expmenu li .menu{display:none;}	
+/* Mouse Events */
+ul.expmenu div.header:hover{
+	cursor:pointer;
+	background-position: 5px;
+	background-repeat: no-repeat;
+}
+
+ul.expmenu li ul li:not(.selected):hover{
+	cursor:pointer;
+}
+ul.expmenu li ul li:not(.selected):active{
+	cursor:pointer;
+}
+
+.menu ol {
+	padding-left:10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #fc7fb3;
+}
+.menu li i{
+	background-color: #fc7fb3;
+	padding: 1px 4px;
+	color: #fff;
+	text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.8);
+	font-family: 宋体;
+	font-style:normal;
+}
+.menu a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+}
+.menu .no {display:none;}
+.menu ol a{
+	display: block;
+	line-height: 2em;
+	margin-left: 20px;
+}

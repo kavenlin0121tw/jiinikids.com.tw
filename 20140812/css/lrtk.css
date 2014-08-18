@@ -1,0 +1,53 @@
+#tab{position:relative;}
+#tab .tabList ul li{
+	float:left;
+	width:235px;
+	text-align:center;
+	margin-left:-1px;
+	position:relative;
+	cursor:pointer;
+	background-image: url(../images/tabbg.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 40px;
+	padding-top: 5px;
+	padding-right: 0;
+	padding-bottom: 5px;
+	padding-left: 0;
+	line-height: 30px;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #FFFFFF;
+}
+#tab .tabCon{
+	position:absolute;
+	left:-1px;
+	top:32px;
+	width:705px;
+	height:100px;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	line-height: 26px;
+	font-weight: normal;
+}
+#tab .tabCon div{
+	position:absolute;
+	opacity:0;
+	filter:alpha(opacity=0);
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	font-family: "微軟正黑體";
+}
+#tab .tabList li.cur{
+	border-bottom:none;
+	background-image: url(../images/tabbg-over.png);
+	background-repeat: no-repeat;
+	font-family: "微軟正黑體";
+}
+#tab .tabCon div.cur{
+	opacity:1;
+	filter:alpha(opacity=100);
+	font-family: "微軟正黑體";
+}
